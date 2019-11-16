@@ -36,10 +36,10 @@ class Newton(object):
 
                 idx = np.argwhere(np.diff(np.sign(y_2 - y_3)))
                 fig = plt.figure()
-                # スケールを指定
+                
                 plt.xlim(-10,10)
                 plt.ylim(-10,10)
-                #X,Yが0の線
+                
                 plt.axhline(0, color='black')
                 plt.axvline(0, color='black')
                 plt.xlabel("x")
@@ -61,9 +61,6 @@ class Newton(object):
                 Xn = Xn_1
                 Xn_1 = float(Xn - function.subs(x,Xn) / cal_diff(function).subs(x,Xn))
                 #---------PLOT----------
-                #x_r = np.arange(-10, 10, 0.1)
-                #y_plot = y_plot(x_r)
-
                 y_a = cal_diff(function).subs(x, Xn_1)
                 y_y = (-y_a*Xn_1) + function.subs(x, Xn_1)
 
@@ -72,17 +69,15 @@ class Newton(object):
 
                 idx = np.argwhere(np.diff(np.sign(y_2 - y_3))).flatten()
 
-                # スケールを指定
                 plt.xlim(-10,10)
                 plt.ylim(-10,10)
-                #X,Yが0の線
+                
                 plt.axhline(0, color='black')
                 plt.axvline(0, color='black')
                 plt.xlabel("x")
                 plt.ylabel("y")
                 plt.plot(x_r,y_plot,'b')
                 line1 = plt.plot(x_r,y_2,color="red")
-                #print(x_r[idx], y_2[idx])
                 line2 = plt.plot(x_r[idx], y_2[idx], 'ko')
                 ims.append(line1+line2)
                 #plt.show()
