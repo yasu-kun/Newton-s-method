@@ -19,8 +19,8 @@ This code uses sympy.
 Install it with the following command if necessary.
 
 
-```pip install sympy```
-or
+```pip install sympy```  
+         or  
 ```conda install simply```
 
 
