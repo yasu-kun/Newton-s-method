@@ -22,6 +22,11 @@ or
 
 
 ## Using Newton's-method
-The `Newton's-method`-constructor takes the following parameters:
-
+###The `Newton`-constructor takes the following parameters:
 * `function`: The function you want to find f(x) = 0
+
+###The `Newton.solve`-constructor takes the following parameters:
+
+* `Iteration`: number of calculations (for approximation) (default = 10)
+* `Seed`: This is the initial value setting. (default isn't definded)
+* `Verbose`: whether to display the calculation process (0: do not display, 1: display), (default = 0)
