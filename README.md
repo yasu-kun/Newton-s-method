@@ -21,7 +21,7 @@ Install it with the following command if necessary.
 
 ```pip install sympy```  
          or  
-```conda install simply```
+```conda install sympy```
 
 
 ## Using Newton's-method
