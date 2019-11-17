@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import sympy as sym
 from sympy import sympify
 import numpy as np
