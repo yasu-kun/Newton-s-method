@@ -28,6 +28,7 @@ Install it with the following command if necessary.
 ### The `Newton`-constructor takes the following parameters:
 * `function`: The function you want to find f(x) = 0
 
+
 ### The `Newton.solve`-constructor takes the following parameters:
 
 * `Iteration`: number of calculations (for approximation) (default = 10)
